@@ -1,15 +1,30 @@
 
 h1 img{
-    height: 20px;
-    width: auto;
     display: flex;
+    height: 20px;
+    
     /* flex-direction: row;
     justify-content: space-between;
      */
-      
 }
+
+.barrederecherche{
+    color:rgb(174, 173, 173); 
+    font-size: small; 
+    font-style: italic;
+    display: flex;
+    justify-content: left;
+  
+}
+
+.fa-solid{
+    color: black;
+    font-size: 15px;
+}
+
+
   nav{
-     width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,11 +32,7 @@ h1 img{
     align-items: center;
 }   
 
-h1 nav{
-    display:flex ;
-   
-    
-}
+
 
 .géranium1{
     display: flex;
@@ -40,8 +51,12 @@ header{
 }
 
  .accueil img{
-height: 500px;
- }  
+    height: 200px;
+    width: 600px;
+ 
+}  
+
+
  h2{
      text-align: center;
      color: green;
@@ -63,9 +78,9 @@ height: 500px;
 }
  .barbec_atelier{
      margin-left: 150px;
-     /* flex-direction: row;
+      flex-direction: row;
      justify-content: flex-start;    
- } */
+ } 
 
 .ideal{
     margin-left: 30px;
