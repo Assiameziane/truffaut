@@ -4,47 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title> Truffaut </title>
 </head>
 
 <body>
 <!--HEADER + NAV-->
-    <header>
-        <h1><img src="./img/LOGO-TRUFFAUT-VERT.jpeg"></h1>
+    <header> 
+       
     <nav>
+        <h1><img src="./img/LOGO-TRUFFAUT-VERT.jpeg"></h1><br>
         <div class="barre de recherche"> rechercher un article</div>
         <div class="magasin"> Trouver un magasin</div>
         <div class="compte">Mon compte</div>
-    </nav>
+    </nav><br>
+    <!------------ NAVBAR  ------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Plantes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Jardinage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Animalerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Maison et loisirs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vie extérieure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Potager</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tendances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Espace PRO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
 <!--LES INDISPENSABLES-->
-<main>
-    <img src="./img/m-depliant.jpeg">
+<main class="container">
+    <div class="accueil row"><img src="./img/accueil.jpg" class="col-12"></div>
     <h2>Les Indispensables</h2>
-
-    <div>
-        <img src="./img/26267_009.jpeg" alt="Géranium">
-        <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
-        <p>15€</p>
+    <div class="géranium1">
+        <div>
+            <img src="./img/26267_009.jpeg" alt="Géranium">
+            <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
+            <p>15€</p>
+        </div>
+        <div>
+            <img src="./img/26267_009.jpeg" alt="Géranium">
+            <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
+            <p>15€</p>
+        </div>
     </div>
-    <div>
-        <img src="./img/26267_009.jpeg" alt="Géranium">
-        <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
-        <p>15€</p>
+    <div class="géranium2">
+        <div>
+            <img src="./img/26267_009.jpeg" alt="Géranium">
+            <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
+            <p>15€</p>
+        </div>
+        <div>
+            <img src="./img/26267_009.jpeg" alt="Géranium">
+            <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
+            <p>15€</p>
+        </div>
     </div>
-    <div>
-        <img src="./img/26267_009.jpeg" alt="Géranium">
-        <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
-        <p>15€</p>
-    </div>
-    <div>
-        <img src="./img/26267_009.jpeg" alt="Géranium">
-        <p>Géranium zonale varié : barquette de 10 plants - Coloris variables</p>
-        <p>15€</p>
-    </div>
-
 <!--CARTE FIDELITE-->
     <div>
         <img src="./img/carte fidelité.jpeg" alt="carte fidélité">
@@ -54,63 +105,63 @@
     </div>
 
 <!--BLOC NORTENE+AB-->
-    <div>
+<div class="row nortene_ab container">
+    <div class="col-6 nor">
         <img src="./img/home-bloc-1b.jpeg" alt="nortene">
         <p>Toile de paillage Agrosol, garantie 4 ans</p>
         <p>JE DECOUVRE</p>
-        </div>
+    </div>
 
-    <div>
+    <div class="col-6 AB">
         <img src="./img/home-bloc-2d.jpeg" alt="ab">
         <p>Potager bio</p>
         <p>JE CULTIVE</p>
     </div>
-
+</div>
 <!--IDEES ET CONSEILS-->
     <h2>Idées et conseils à la une</h2>
-
-    <div>
+<div class="row mag">
+    <div class="col-8">
         <h3>Magazine de printemps-gratuit en jardinerie</h3>
         <img src="./img/home-conseil-mag2.jpeg" alt="magazine">
     </div>
-    <div>
+    <div class="col-4 tag">
         <h3>Podcast connecté nature</h3>
-        <img src="./img/home-conseil-2-podcast12.jpeg" alt="potcast">
+        <img src="./img/home-conseil-2-podcast12.jpeg" alt="podcast">
     </div>
-    <div>
+</div>
+<div class="row barbec_atelier">
+    <div class="col-4">
         <h3>Quel type de barbecue choisir ?</h3>
         <img src="./img/home-conseil-3.jpeg" alt="barbecue">
     </div>
-    <div>
+    <div class="col-8 atelier">
         <h3>Participez aux ateliers en magasin</h3>
         <img src="./img/home-conseil-4.jpeg" alt="ateliers">
     </div>
+</div>
     <div>Tous nos conseils</div>
 
 <!--IMAGES PROJETS-->
-    <div>
-        <img src="./img/rse1.jpeg" alt="projet idéal">
+
+<div class="row flex-nowrap labels container">
+    <div class="col-4">
+        <div class="ideal"><img src="./img/rse1.jpeg" alt="projet idéal"></div>
         <p>L'arrondi en caisse pour le projet IDEAL</p>
         <p>Comment participer ?</p>
     </div>
-    <div>
+    <div class="col-4 arrosoir">
         <img src="./img/rse2.jpeg" alt="labels horticoles">
         <p>Les labels horticoles</p>
         <p>En savoir plus</p>
     </div>
-    <div>
+    <div class="col-4 jardins">
         <img src="./img/rse3.jpg" alt="jardins pour demain">
         <p>Nos "Jardins pour demain", des oasis de biodiversité</p>
         <p>Notre projet</p>
     </div>
-
-
-
-    
-    
-
-
-
+</div>
+  
 </main>
 
 </body>
